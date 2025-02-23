@@ -19,7 +19,7 @@ st.markdown(
 )
 
 #title and description
-st.title("Datasweeper Sterling Integrator By Sana Jameel")
+st.title("📀 Datasweeper Sterling Integrator By Sana Jameel")
 st.write("Transform your  files between CVS and Excel formats with bult-in data cleaning and visualization Creating the project for quarter 3!")
 
 #file uploader
@@ -58,7 +58,7 @@ if uploaded_file:
                     df[numeric_cols]   = df[numeric_cols].fillna(df[numeric_cols].mean())
                     st.write("☑ Missing values have been filled!")
         
-        st.subheader("📌 Select Columns to Keep")
+        st.subheader("🎯 Select Columns to Keep")
         columns = st.multiselect(f"Choose columns for {file.name}", df.columns, default=df.columns)
         df = df[columns]
 
